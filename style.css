@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'Didot';
+    src: url('fonts/Didot-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    background-image: url("img/sj-objio-XFWiZTa2Ub0-unsplash.jpg");
+    background-size: cover;
+}
+
+.container-cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 2%;
+
+    position: fixed; /*fixado na parte superior*/
+    top: 0%; /*posição na parte superior*/
+    width: 100%; /*largura do cabeçalho*/
+    height: 10%; /*tamanho do cabeçalho*/
+    justify-content: center; /* centraliza horizontalmente (eixo principal)*/
+    align-items: center; /* centraliza verticalmente (eixo transversal)*/
+    color:#333;
+    font-family: 'Didot', sans-serif;
+    font-size: 13px;
+    font-display:initial;
+    background-color:cornsilk;
+}
+
+#menu-icon {
+    position: fixed;
+    left: 20px;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+    color: rgb(146, 111, 111);
+}
+#menu-toggle {
+    display: none; /*oculta o checkbox */
+}
+#menu-toggle:checked + #menu-navegacao { /*menu quando clicado*/
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 0;  
+    width: 100%;
+    height: 100%;
+    background-color:cornsilk;
+}
+#menu-navegacao { /*esconde os itens do menu dentro do botão*/
+    display: none;
+}
+#menu-navegacao ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.item-menu {
+    margin: 10px 0;
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Didot', sans-serif;
+}
+.item-menu:hover {
+    background-color:rgb(254, 252, 247) !important;
+    padding: 5px;
+}
+a:link {
+    color: rgb(81, 47, 47);
+    text-decoration: none;
+} 
+a:visited {
+    color: rgb(81, 47, 47);
+    text-decoration: none;
+}
+
+.introducao-site {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+#titulo-introducao {
+    font-family:fantasy ;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 60px;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+}
+.texto-introducao {
+    width: 80%;
+    margin: 0 auto; /* centraliza horizontalmente */
+    display: flex;
+    justify-content: center; /* centraliza verticalmente */
+    flex-direction: column; /* alinha verticalmente os elementos dentro do container */
+    text-align: center;
+    font-family: 'Didot', sans-serif;
+    font-size: 110%;
+    background-color: rgba(192, 182, 135, 0.7); /* Define a cor de fundo com 70% de opacidade */
+    border-radius: 10px;
+  padding: 10px; /* Define o preenchimento interno da caixa */
+}
+
+.catalogo-filmes {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color:rgb(250, 247, 238);
+}
+.coluna-catalogo {
+    vertical-align: top;
+    padding: 1%;
+    border: 1px solid #ccc;
+    width: 25%;
+    text-align: center;
+}
+.imagem-banner {
+    width: 100%!important;
+    object-fit:cover;
+}
+
+.titulo-filme {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+.informacoes-filme {
+    font-size: 17px;
+    text-align:justify;
+    color: #666;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-criador {
+    display: flex;
+    margin: 3% 3% 2% 3%;
+    margin-left: 1%;
+}
+#criadora-imagem {
+    float: left;
+    border-radius: 50%;
+    width: 26%;
+    margin-right: 3%;
+}
+.sobre-criador {
+    text-align: justify;
+    font-size: 100%;
+    font-family: 'Didot';
+    background-color: rgba(192, 182, 135, 0.7); /* Define a cor de fundo com 70% de opacidade */
+    border-radius: 2rem;
+    padding: 1% 2% 1% 2%; /* Define o preenchimento interno da caixa */
+}
+.container-finalidade-site {
+    text-align: justify;
+    background-color: rgba(192, 182, 135, 0.7); /* Define a cor de fundo com 70% de opacidade */
+    border-radius: 2rem;
+    padding: 1% 2% 2% 2%;
+    margin: 0 3% 0 3%;
+    margin-left: 1%;
+    font-family: 'Didot';
+}
+
+.conteudo-contato {
+    display: flex;
+    width: 100%;
+    margin-top: 4%;
+}
+.container-formulario {
+    width: 45%;
+    padding: 2%;
+    padding-top: 1%;
+    margin: 5%;
+    margin-bottom: 3%;
+    background-color: beige;
+    border-radius: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 95%;
+}
+
+.container-redes-sociais {
+    width: 80%;
+    bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.imagem-vintagemflix {
+    width: 50%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+  }
+
+.fa-facebook {
+    background: #3B5998;
+  }
+  
+.fa-twitter {
+    background: #55ACEE;
+}
+
+.fa-instagram {
+    background: rgb(241, 81, 81);
+}
+
+.fa-youtube {
+    background: #fd2e2e;
+}
+
+.container-mensagem-enviada {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: white;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.retornar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: fantasy;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+    margin-bottom: 12%;
+}
+
+#titulo-galeria {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    color: rgb(47, 42, 42);
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.3);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 250%;
+}
+
+.lista-galeria{
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150%;
+}
+
+.lista-galeria ul {
+    list-style: none;
+}
+
+#rodapeprincipal {
+    display: flex;
+    position:relative;
+    bottom: -2rem;
+    height: 50px;
+    background-color:cornsilk;
+    font-family: 'Didot', sans-serif;
+    font-size: 15px;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+}
