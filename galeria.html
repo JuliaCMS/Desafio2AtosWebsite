@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta name="keywords" content="VintageFlix Blockbuster, filmes antigos, clássicos do cinema, filmes cult">
+    <meta name="description" content="Nosso site possui uma seleção de clássicos do cinema. Com uma interface intuitiva e 
+    fácil de usar, você pode descobrir novos títulos, ler sinopses e ver screenshots de interesse dos filmes.">
     <meta name="author" content="Julia Mourão">
-    <title>Home - VintageFlix Blockbuster</title>
-    <link rel="shortcut icon" type="image/png" href="img/icons8-tv-24.png">
+    <title>Galeria de imagens - VintageFlix Blockbuster</title>
+    <link rel="shortcut icon" type="image/png" href="img/icone-tv.png">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -15,29 +17,38 @@
     <header>
         <div class="container-cabecalho">
             <h1>
-                <img src="img/icons8-tv-24.png" alt="Imagem de uma tv"> VINTAGEFLIX BLOCKBUSTER
+                <img src="img/icone-tv.png" alt="Imagem de uma TV"> VINTAGEFLIX BLOCKBUSTER
             </h1>
 
             <label for="menu-toggle" id="menu-icon">&#9776;</label>
             <input type="checkbox" id="menu-toggle">
             <nav id="menu-navegacao">
-            <ul>
-                <li class="item-menu"><a href="index.html">Início</a></li>
-                <li class="item-menu"><a href="sobre.html">Sobre o projeto</a></li>
-                <li class="item-menu"><a href="contato.html">Entre em contato</a></li>
-                <li class="item-menu"><a href="galeria.html">Galeria de imagens</a></li>
-            </ul>
+                <ul>
+                    <li class="item-menu"><a href="index.html">Início</a></li>
+                    <li class="item-menu"><a href="sobre.html">Sobre o projeto</a></li>
+                    <li class="item-menu"><a href="contato.html">Entre em contato</a></li>
+                    <li class="item-menu"><a href="galeria.html">Galeria de imagens</a></li>
+                </ul>
             </nav>
         </div>
     </header>
-
-    <br><br><br><br><br>
 
     <section>
         <header>
             <h2 id="titulo-galeria">GALERIA DE IMAGENS</h2>
         </header>
-        <div class="texto-introducao">
+        <div class="tabela-imagens">
+            <table>
+                <tr>
+                    <td><img class="tabela-imagem" src="img/tabela-imagens/Breakfast-at-Tiffanys.webp" alt="Cena do filme Bonequinha de Luxo"></td>
+                    <td><img class="tabela-imagem" src="img/tabela-imagens/Dead-Poets-Society.webp" alt="Cena do filme Sociedade dos Poetas Mortos"></td>
+                    <td><img class="tabela-imagem" src="img/tabela-imagens/E.T-movie-e1550779088382.webp" alt="Cena do filme E.T.: O Extraterrestre"></td>
+                    <td><img class="tabela-imagem" src="img/tabela-imagens/Silence-of-the-Lambs.webp" alt="Cena do filme O Silêncio dos Inocentes"></td>
+                    <td><img class="tabela-imagem" src="img/tabela-imagens/Star-Wars-V.webp" alt="Cena do filme Star Wars V"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="texto">
             <p>
                 Aqui você encontrará uma coleção dos momentos mais emblemáticos que capturam a essência de alguns dos filmes mais
                 icônicos da história do cinema. Explore a magia dos filmes através da nossa galeria de imagens!
@@ -46,34 +57,29 @@
                 Clique no nome do filme desejado para ver a nossa seleção de screenshots.
             </p>
         </div>
-        
     </section>
 
     <section class="lista-galeria">
         <ul>
             <li>
-                <a href="2001.html">2001: Uma Odisséia no Espaço</a>
+                <a href="pagina-filmes/2001.html">2001: Uma Odisséia no Espaço</a>
             </li>
             <br>
             <li>
-                <a href="pulp.html">Pulp Fiction</a>
+                <a href="pagina-filmes/pulp.html">Pulp Fiction</a>
             </li>
             <br>
             <li>
-                <a href="psicose.html">Psicose</a>
+                <a href="pagina-filmes/psicose.html">Psicose</a>
             </li>
             <br>
             <li>
-                <a href="godfather.html">O Poderoso Chefão</a>
+                <a href="pagina-filmes/godfather.html">O Poderoso Chefão</a>
             </li>
         </ul>           
     </section>
 
-    <br><br><br>
-
-
-
-    <footer id="rodapeprincipal">
+    <footer id="rodape-principal">
         <p>Copyright VintageFlix Blockbuster - 2023. Todos os direitos reservados.</p>
     </footer>
 
